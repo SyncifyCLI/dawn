@@ -1,0 +1,18 @@
+{
+  "name": "@syncify/dawn",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Syncify Strap (Dawn) with the most elementary presets.",
+  "license": "MIT",
+  "syncify": {
+    "stores": {
+      "domain": "syncify",
+      "themes": {
+        "dev": 136656060657
+      }
+    }
+  },
+  "devDependencies": {
+    "@syncify/cli": "link:../../.."
+  }
+}
