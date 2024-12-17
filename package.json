@@ -1,9 +1,8 @@
 {
-  "name": "@syncify/dawn",
+  "name": "syncify-dawn",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Syncify Strap (Dawn) with the most elementary presets.",
-  "license": "MIT",
   "syncify": {
     "stores": {
       "domain": "syncify",
@@ -12,7 +11,7 @@
       }
     }
   },
-  "devDependencies": {
-    "@syncify/cli": "link:../../.."
+  "dependencies": {
+    "@syncify/config": "^0.0.4"
   }
 }

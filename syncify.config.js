@@ -1,12 +1,14 @@
-import { defineConfig } from '@syncify/cli';
+import { defineConfig } from '@syncify/config';
 
 export default defineConfig({
   paths: {
+    // We are defining pass-throughs
     assets: [
       'assets/image/*',
       'assets/icons/*',
       'assets/scripts/*'
     ],
+    // We are defining sub-directory renaming and globs
     snippets: {
       '*': [
         './source/snippets/**/*.liquid'
@@ -19,6 +21,7 @@ export default defineConfig({
         './source/snippets/card/collection.liquid'
       ]
     },
+    // We are defining sub-directory renaming and globs
     sections: {
       '*': [
         'sections/**/*'
@@ -29,6 +32,8 @@ export default defineConfig({
       ]
     }
   },
+  // This is an example of a transform
+  //
   transform: {
     // add this to paths > assets[] if you do not live in a society
     // and prefer that Shopify minify your code.

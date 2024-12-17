@@ -1,12 +1,12 @@
 {
   "files.exclude": {
     "**/.git": true,
-    // "**/node_modules": true,
+    "**/node_modules": false,
     "**/pnpm-lock.yaml": true
   },
   "json.schemas": [
     {
-      "url": "https://unpkg.com/@syncify/schema@0.2.2/syncify.json",
+      "url": "https://unpkg.com/@syncify/schema@0.2.5/syncify.json",
       "fileMatch": [
         "package.json"
       ],

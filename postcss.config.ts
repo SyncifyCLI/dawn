@@ -1,4 +1,4 @@
-import { env } from '@syncify/cli';
+import { env } from '@syncify/config';
 
 const plugins = [ require('autoprefixer') ];
 

@@ -11,24 +11,32 @@ This strap demonstrates how Syncify can be used as a replacement for the Shopify
 - Optionally Bundles CSS files
 - Optionally Process CSS with PostCSS, Autoprefixer and CleanCSS.
 - Leverages sub-directories and renames
+- Using project-level `.env` file for shop credentials
 
 # Instructions
 
-Fork or download this repository. You should install [pnpm](https://pnpm.js.org/en/cli/install) and use it instead of npm or yarn (though they are also supported). Follow the below steps, this is not complicated and Syncify will help you.
+You can start hacking on this project by either forking and installing depedendencies or using the `sy create` command prompt. It is assumed that you have installed [@syncify/cli](https://github.com/panoply/syncify) as a global depencency on your computer and have access to store credentials.
 
-1. Run `pnpm install` to install dependencies
-2. Run `pnpm sy --setup` and follow the prompts
+- [Installation](https://syncify.sh/setup/installation/)
+- [Authentication](https://syncify.sh/setup/authentication/)
 
-### Commands
+## sy create
 
-Couple of basic commands to use during development
+Open up your terminal and run the following command:
 
 ```bash
-$ pnpm sy -w              # Runs Syncify in development watch mode
-$ pnpm sy -w --hot        # Runs Syncify in development watch mode with hot reloads
-$ pnpm sy -b              # Runs Syncify in build mode
-$ pnpm sy -b --prod       # Runs Syncify in build mode with production output
-$ pnpm sy -p              # Runs Syncify publish mode to export theme
+sy create dawn
+```
+
+## Commands
+
+Couple of basic commands to use during development:
+
+```bash
+$ sy -w              # Runs Syncify in development watch mode
+$ sy -w --hot        # Runs Syncify in development watch mode with hot reloads
+$ sy -b              # Runs Syncify in build mode
+$ sy -b --prod       # Runs Syncify in build mode with production output
 ```
 
 # License
